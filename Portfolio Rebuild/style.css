@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+html, body{
+    background-color: #1B2129;
+    color: #bdf3fe;
+    font-family: 'Saira', sans-serif;
+    font-size: 2vmin;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+section{
+    height: 100vh;
+}
+
+
+/*navbar*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    background-color: #171D23;
+    border-bottom: 1px solid black;
+    box-shadow: 0 0.1rem 1rem #000;
+}
+
+header h1{
+    margin: 1rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+nav a{
+    display: inline-block;
+    margin-right: 2rem;
+    text-decoration: none;
+    color: #bdf3fe;
+    font-size: 1.3vw;
+}
+
+a:hover { 
+    animation: glow 1s ease-in-out infinite alternate;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+ }
+
+ @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00b4d8
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 15px #00b4d8, 0 0 20px #00b4d8
+    }
+  }
+/*navbar*/
+#home{
+    display: flex;
+    background-color: #1B2129;
+    background-image: linear-gradient(315deg, #1B2129 0%, #11171d 74% );
+}
+
+#title{
+    margin: 0 10vw 0;
+}
+
+#homearticle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 10vw;
+    margin: 1vw;
+    color: #00b4d8;
+    text-shadow: #000 0 0 1vw;
+}
+
+#title h2{
+    font-family: 'Saira', sans-serif;
+    font-size: 2vw;
+}
+
+#homearticle button{
+    min-width: 15vw;
+    padding: 1vw;
+    font-family: inherit;
+    font-size: 1.4vw;
+    font-weight: 600;
+    margin-top: 5vh;
+    color: #bdf3fe;
+    background-color: #2a3a52;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    border: solid #00b4d8;
+    cursor: pointer;
+    text-shadow: #000 0 0 1vw;
+}
+
+#homearticle button:hover{
+    background-color: #00b4d8 ;
+    border: solid #2a3a52;
+    box-shadow: #2a3a52 0 0 1vw;
+}
+@media screen and (max-width: 1300px){
+    nav a{
+        font-size: 3vw;
+    }
+    #homearticle button{
+        margin-bottom: 35vh;
+        font-size: 2vw;
+        margin-top: 5vh;
+    }
+    #title{
+        margin-top: 10vw;
+        margin-bottom: 5vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #title h1{
+        font-size: 15vw;
+        margin: 0;
+    }
+    #title h2{
+        font-size: 4vw;
+        margin: 0;
+    }
+    nav a{
+        font-size: 4vw;
+    }
+    #title{
+        margin-bottom: 5vh;
+    }
+    #homearticle button{
+        margin-bottom: 35vh;
+        font-size: 4vw;
+    }
+}
