@@ -71,22 +71,27 @@ a:hover {
 
 #homearticle{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    margin-top: 15vh;
+}
+
+#homearticle h2{
+    margin-bottom: 0;
 }
 
 #title h1{
     font-family: 'Dancing Script', cursive;
     font-size: 10vw;
-    margin: 1vw;
+    margin: 0;
     color: #00b4d8;
-    text-shadow: #000 0 0 1vw;
+    text-shadow: #00b4d8 0 0 .5vw;
 }
 
 #title h2{
     font-family: 'Saira', sans-serif;
-    font-size: 2vw;
+    font-size: 1.8vw;
 }
 
 #homearticle button{
@@ -96,36 +101,215 @@ a:hover {
     font-size: 1.4vw;
     font-weight: 600;
     margin-top: 5vh;
-    color: #bdf3fe;
-    background-color: #2a3a52;
-    border-radius: 1.5rem;
-    padding: 1rem;
-    border: solid #00b4d8;
+    color: #1B2129;
+    background-color: #00b4d8;
+    border-radius: 1rem;
+    border: solid #2a3a52;
     cursor: pointer;
-    text-shadow: #000 0 0 1vw;
 }
 
-#homearticle button:hover{
-    background-color: #00b4d8 ;
-    border: solid #2a3a52;
-    box-shadow: #2a3a52 0 0 1vw;
+#homearticle button a{
+    text-decoration: none;
+    color: #1B2129;
+    padding: .1rem;
 }
-@media screen and (max-width: 1300px){
+
+#homearticle button a:hover{
+    text-decoration: none;
+    color: #bdf3fe;
+}
+#homearticle button:hover{
+    background-color: #2a3a52 ;
+    border: solid #00b4d8;
+    box-shadow: #2a3a52 0 0 1vw;
+    color: #bdf3fe;
+}
+
+/*projects*/
+
+#projarticle #title{
+    padding-top: 6vw;
+}
+#projarticle #title h1{
+    font-size: 6vw;
+}
+
+#projarticle #title h2{
+    margin-top: .5vw;
+    margin-bottom: 1.5vw;
+}
+
+#projects{
+    background-color: #1B2129;
+    background-image: linear-gradient(-135deg, #1B2129 0%, #11171d 74% );
+}
+
+#projcontainer{
+    display: flex;
+    gap: 1vw;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin-top: 1vw;
+}
+
+
+#projcontainer div{
+    width: 35vw;
+    height: 15vw;
+    border: .4vw solid #00b4d8;
+    box-shadow: 0 0.1rem .5rem #00b4d8;
+}
+#projcontainer div h2{
+    margin-left: 1rem;
+    padding-left: 1rem;
+    width: 20vw;
+    color: #bdf3fe;
+}
+
+#projcontainer a{
+    text-decoration: none;
+    color: #bdf3fe;
+}
+#cell-1{
+    border-radius: 0 3vw 0 3vw;
+    background-image: url('https://i.ibb.co/hMkSpwQ/bryceahaynes.png');
+}
+
+#cell-2{
+    border-radius: 3vw 0 3vw 0;
+}
+
+#cell-3{
+    border-radius: 3vw 0 3vw 0;
+}
+
+#cell-4{
+    border-radius: 0 3vw 0 3vw;
+}
+
+
+/*projects*/
+
+/*about*/
+#aboutarticle #title{
+    padding-top: 6vw;
+}
+#aboutarticle #title h1{
+    font-size: 6vw;
+}
+
+#aboutarticle #title h2{
+    margin-top: .5vw;
+    font-size: 1.3VW;
+}
+
+#about{
+    background-color: #1B2129;
+    background-image: linear-gradient(315deg, #1B2129 0%, #11171d 74% );
+}
+#abouta{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 1vw;
+}
+#abouthead{
+    text-align: center;
+}
+
+#flex-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+#flex-about p{
+    font-size: 2vw;
+    padding: 0 1vw;
+    text-align: center;
+}
+#box1{
+    width: 40vw;
+    height: 20vw;
+    border-radius: 3vw 0 3vw 0;
+    border: .4vw solid #00b4d8;
+    box-shadow: 0 0.1rem .5rem #00b4d8;
+}
+#box2{
+    width: 40vw;
+    height: 20vw;
+    border-radius: 0 3vw 0 3vw;
+    border: .4vw solid #00b4d8;
+    box-shadow: 0 0.1rem .5rem #00b4d8;
+}
+
+#para3-box{
+    text-align: center;
+    border-radius: 1vw;
+    border-radius: 0 0 3vw 3vw;
+    border: .4vw solid #00b4d8;
+    box-shadow: 0 0.1rem .5rem #00b4d8;
+    margin-top: 1vw;
+    padding: .5vw;
+    font-size: 1.1vw
+}
+#para3-box{
+    font-size: 1.5vw;
+}
+
+#aboutfoot{
+    text-align: center;
+}
+
+
+/*about*/
+/*contact*/
+#contarticle #title{
+    padding-top: 6vw;
+}
+#contarticle #title h1{
+    font-size: 6vw;
+}
+
+#contarticle #title h2{
+    margin-top: .5vw;
+    font-size: 1.3VW;
+}
+
+#contact{
+    background-color: #1B2129;
+    background-image: linear-gradient(-135deg, #1B2129 0%, #11171d 74% );
+}
+/*contact*/
+@media screen and (max-width: 1060px){
+    
     nav a{
         font-size: 3vw;
     }
     #homearticle button{
-        margin-bottom: 35vh;
-        font-size: 2vw;
+        font-size: 3vw;
         margin-top: 5vh;
     }
     #title{
-        margin-top: 10vw;
+        padding-top: 10vw;
         margin-bottom: 5vh;
+    }
+    #homearticle{
+        margin-top: 10vw;
+    }
+    #projarticle #title h1{
+        font-size: 10vw;
+        margin-top: 10vw;
+    }
+    #aboutarticle #title h1{
+        font-size: 10vw;
+        margin-top: 10vw;
+    }
+    #aboutarticle h2{
+        font-size: 2.1vw;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     #title h1{
         font-size: 15vw;
         margin: 0;
@@ -141,7 +325,66 @@ a:hover {
         margin-bottom: 5vh;
     }
     #homearticle button{
-        margin-bottom: 35vh;
         font-size: 4vw;
     }
+    #projcontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #projcontainer div{
+        width: 80vw;
+        height: 25vw ;
+    }
+    #cell-3{
+        border-radius: 0 3vw 0 3vw;
+    }
+    #cell-4{
+        border-radius: 3vw 0 3vw 0;
+    }
+
+    #projarticle #title h1{
+        font-size: 10vw;
+        margin-top: 10vw;
+    }
+    #projarticle #title h2{
+        margin-top: 3vw;
+        margin-bottom: 3vh;
+    }
+    #abouta{
+        font-size: 1.5vw;
+    }
+
+    #aboutarticle #title h1{
+        font-size: 10vw;
+        margin-top: 10vw;
+    }
+
+    #contarticle #title h1{
+        font-size: 10vw;
+        margin-top: 10vw;
+    }
+    #abouta h2{
+        font-size: 4vw;
+    }
+    #flex-about{
+        align-items: center;
+        gap: 2vw;
+    }
+    #flex-about p{
+        font-size: 3.4vw;
+    }
+    #box1, #box2{
+        width: 50vw;
+        height: 50vw;
+    }
+    #para3-box{
+        font-size: 2.6vw;
+        margin-top: 3vw;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
 }
